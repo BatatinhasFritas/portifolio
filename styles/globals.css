@@ -13,3 +13,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.light-theme {
+  --pimary-color: #A259FF;
+  --secondary-color: #444555;
+  --background-color-1: #F6F6FF;
+  --background-color-2: #EAEAFF;
+
+  --text-base-color: #000;
+}
+
+.dark-theme {
+  --pimary-color: #A259FF;
+  --secondary-color: #DDDDDD;
+  --background-color-1: #2E2E40;
+  --background-color-2: #272636;
+
+  --text-base-color: #fff;
+}
