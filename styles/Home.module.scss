@@ -1,0 +1,9 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+
+  background-color: var(--background-color-1);
+  color: var(--text-base-color);
+
+  transition: 0.5s;
+}
