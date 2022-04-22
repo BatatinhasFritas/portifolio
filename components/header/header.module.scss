@@ -1,18 +1,19 @@
 .header {
   background-color: var(--background-color-1);
+  position: fixed;
   transition: 0.5s;
 
   width: 100vw;
-  height: 80px;
 
   display: flex;
   justify-content: center;
 
-  overflow-x: hidden;
-
   .container {
+    transition: 0.5s;
+
     width: 90%;
     max-width: 1800px;
+    height: 80px;
 
     display: flex;
     flex-direction: row;
@@ -35,6 +36,7 @@
 
     .logotipo {
       font-size: 1.6em;
+      transition: 0s;
   
       span {
         font-weight: bold;
@@ -55,7 +57,7 @@
         align-items: center;
         justify-content: center;
 
-        padding: 0 0.6rem;
+        width: calc(100% / 3);
         height: 100%;
 
         transition: 0.2s;
@@ -82,31 +84,40 @@
 }
 
 @media (max-width: 1000px) {
-  .header .container .mobile-menu {
-    display: block;
-  }
 
-  .header .container nav {
-    background-color: var(--background-color-2);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100vw;
-    max-width: 100vw;
-    height: calc(100vh - 80px);
-    flex-direction: column;
-    justify-content: start;
+  .header {
+    .container {
+      .mobile-menu {
+        display: block;
+      }
 
-    transform: translateX(-100%);
-    
-    transition: 0.4s ease-in;
-    a {
-      height: 100px;
+      nav {
+        background-color: var(--background-color-2);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        justify-content: start;
+        height: 0;
+        width: 100vw;
+        max-width: 100vw;
+        overflow: hidden;
+
+        transition: 0.2s;
+        a {
+          height: 100px;
+          width: auto;
+        }
+      }
+
+      .activate-nav-bar {
+        height: calc(100vh - 80px);
+      }
+
+      .activate-header {
+        height: calc(100vh - 80px);
+      }
     }
-  }
-
-  .header .container .activate-nav-bar {
-    transform: translateX(0%);
   }
 }
 

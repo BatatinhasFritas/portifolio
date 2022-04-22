@@ -19,7 +19,7 @@ export function Header({theme, setTheme}) {
     }
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header + " " + styles['activate-header']}  id='header'>
             <div className={styles.container}>
 
                 <div 
@@ -37,17 +37,16 @@ export function Header({theme, setTheme}) {
                     <div></div>
                 </div>
 
-                <a className={styles.logotipo}>
+                <a href='#' className={styles.logotipo} onClick={ () => SetMobileNavState('') }>
                     Isaque
                     <span>Alcantara</span>
                 </a>
 
                 <nav className={mobileNavState}>
-                    <a href="#" id='nav-about-me' onClick={ () => SetMobileNavState('') }>Sobre mim</a>
-                    <a href="#" id='nav-home' onClick={ () => SetMobileNavState('') }>Home</a>
-                    <a href="#" id='nav-skills' onClick={ () => SetMobileNavState('') }>Skills</a>
-                    <a href="#" id='nav-projects' onClick={ () => SetMobileNavState('') }>Projetos</a>
-                    <a href="#" id='nav-contact' onClick={ () => SetMobileNavState('') }>Contato</a>
+                    <a href="#skills" id='nav-skills' onClick={ () => SetMobileNavState('') }>Skills</a>
+                    {/* <a href="#" id='nav-projects' onClick={ () => SetMobileNavState('') }>Projetos</a> */}
+                    <a href="#schooling" id='nav-schooling' onClick={ () => SetMobileNavState('') }>Cursos</a>
+                    <a href="#contact" id='nav-contact' onClick={ () => SetMobileNavState('') }>Contato</a>
                 </nav>
 
                 <button 
