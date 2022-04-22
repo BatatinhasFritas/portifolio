@@ -1,0 +1,39 @@
+.container .cursos-container {
+    display: flex;
+    flex-direction: row;
+
+    .curso {
+        min-height: 200px;
+        width: 330px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 40px;
+        p {
+            text-align: justify;
+
+            strong {
+                color: var(--text-base-color);
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .container .cursos-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 330px) {
+    .container .cursos-container .curso {
+        width: auto;
+
+        img {
+            width: calc(100vw - 100px);
+        }
+    }
+}
