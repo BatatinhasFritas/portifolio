@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "estende": "próximo",
+  "regras": {
+    "entidades reativas / sem obstáculos": "off",
+    "@ next / next / no-page-custom-font": "off"
+  }
 }
