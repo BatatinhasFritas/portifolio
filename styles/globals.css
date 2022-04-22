@@ -5,6 +5,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -25,6 +29,7 @@ a {
   --background-color-2: #EAEAFF;
 
   --text-base-color: #000;
+  --text-secondary-color: #555;
 }
 
 .dark-theme {
@@ -34,4 +39,9 @@ a {
   --background-color-2: #272636;
 
   --text-base-color: #fff;
+  --text-secondary-color: #ccc;
+}
+
+h1, h2, h3, p, span {
+  transition: 0s;
 }
