@@ -36,7 +36,7 @@ export default function Home() {
             Resolvo seu problema com um pouco de JavaScript e criatividade.
             </p>
           </div>
-          <button>fale comigo</button>
+          <a href='mailto:alcantara.isaque167@gmail.com' className={styles.button}>fale comigo</a>
         </section>
 
         <Skills theme={theme}/>
