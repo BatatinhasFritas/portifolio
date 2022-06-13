@@ -1,0 +1,28 @@
+.card {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 200px;
+        height: 200px;
+        
+        border-radius: 50%;
+        border: solid var(--pimary-color) 6px;
+    }
+
+    .name {
+        font-size: 4.5rem;
+        
+        strong {
+            font-weight: bold;
+            color: var(--pimary-color);
+        }
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
