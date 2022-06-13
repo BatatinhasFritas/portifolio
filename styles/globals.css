@@ -5,6 +5,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,30 +28,18 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .light-theme {
-  --pimary-color: #A259FF;
-  --secondary-color: #444555;
-  --background-color-1: #F6F6FF;
-  --background-color-2: #ddf;
-
-  --text-base-color: #000;
-  --text-secondary-color: #555;
+  --pimary-color: #A6806A;
+  --secondary-color: #262626;
+  --text-base-color: #262626;
+  --background-color-1: #F2F2F2;
+  --background-color-2: #E1D1CD;
 }
 
 .dark-theme {
-  --pimary-color: #A259FF;
-  --secondary-color: #DDDDDD;
-  --background-color-1: #2E2E40;
-  --background-color-2: #272636;
-
-  --text-base-color: #fff;
-  --text-secondary-color: #ccc;
-}
-
-h1, h2, h3, p, span {
-  transition: 0s;
+  --pimary-color: #A6806A;
+  --secondary-color: #FCF7F3;
+  --text-base-color: #FCF7F3;
+  --background-color-1: #262626;
+  --background-color-2: #363231;
 }
